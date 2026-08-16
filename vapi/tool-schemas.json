@@ -1,0 +1,25 @@
+ {"verify_customer": {
+  "type": "object",
+  "properties": {
+    "accountLast4": {
+      "description": "The last 4 digits of the customer's account number exactly as spoken by the customer. Keep leading zeros. This value must contain exactly 4 digits.\n",
+      "type": "string"
+    }
+  },
+  "required": [
+    "accountLast4"
+  ]
+},
+"get_customer_details" : {
+  "type": "object",
+  "properties": {
+    "customerId": {
+      "description": "The customerId returned by verify_customer after successful authentication.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "customerId"
+  ]
+}
+ }
